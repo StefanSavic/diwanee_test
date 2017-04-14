@@ -1,0 +1,34 @@
+.social{
+	display:flex;
+	padding:5em 0;
+	h5{
+		text-align: center;
+	}
+}
+.social__content{
+	display:flex;
+	margin:auto;
+	flex-direction:column;
+}
+.social_wrap{
+	display:flex;
+}
+.social__icon{
+	margin-right: 1em;
+	padding:1em;
+	background:blue;
+	display:flex;
+	width: 65px;
+	height: 65px;
+}
+i{
+	margin:auto;
+	font-size:55px!important;
+	color:#fff;
+}
+.facebook{
+	background:#3c5a9a;
+}
+.twitter{
+	background:#20b9ff;
+}

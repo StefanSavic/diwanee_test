@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto",san-serif; }
+
+html, body {
+  overflow-x: none !important; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url("img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .5 linear; }
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  z-index: 99;
+  background: rgba(242, 238, 227, 0.5); }
+
+nav {
+  display: flex;
+  justify-content: space-around; }
+  nav ul {
+    margin: auto 0;
+    list-style-type: none;
+    display: flex; }
+    nav ul li {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 0 1em; }
+      nav ul li a {
+        font-weight: 300;
+        color: #000; }
+
+.header__logo {
+  background-image: url("/img/diwanee-logo.png");
+  width: 148px;
+  height: 40px; }
+
+.text__divider {
+  margin: 4em auto;
+  margin-top: 2em;
+  display: inline-block;
+  width: 60px;
+  height: 3px;
+  background: #c41230; }
+
+.header__content {
+  position: relative;
+  top: -4em;
+  font-family: "Helvetica",san-serif;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  .header__content h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 80px;
+    padding-top: 2em; }
+  .header__content .header__content__text {
+    max-width: 550px;
+    font-size: 24px;
+    text-align: center;
+    margin: auto; }
+
+.services {
+  display: flex;
+  flex-wrap: wrap; }
+
+.service {
+  background: #fbfbfb;
+  display: flex;
+  padding: 5em 0;
+  flex: 1; }
+
+.service__content {
+  margin: auto;
+  padding: 1em;
+  text-align: center; }
+
+.service__header {
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+
+.service__text {
+  font-weight: 300;
+  color: #666;
+  max-width: 377px; }
+
+.text__divider--gray {
+  margin: 3em auto;
+  background: #d0d0d0; }
+
+.logo_development {
+  width: 103px;
+  background: url("/img/development_logo.png"); }
+
+.web_logo {
+  background: url("/img/web.png");
+  width: 88px; }
+
+.team_logo {
+  width: 88px;
+  background: url("/img/team.png"); }
+
+.service:nth-child(2) {
+  background: #ededed; }
+
+.service__logo {
+  height: 88px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 3em; }
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4em;
+  padding-bottom: 1em; }
+
+.jobs__header {
+  padding: 2em 0;
+  text-align: center;
+  margin: auto; }
+
+.small-headline {
+  font-size: 14px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  padding-bottom: 2em; }
+
+.jobs__header__headline {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #222;
+  font-weight: 400; }
+
+.jobs__header_subheadline {
+  font-weight: 300;
+  padding: 1em;
+  color: #222; }
+
+.job_cards {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  padding: 2em;
+  padding-bottom: 3em; }
+
+.job_cards__description {
+  padding-right: 1em; }
+
+.job_cards__description_headline {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500; }
+
+.job_cards__description__subheadline {
+  margin: 2em 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: 300;
+  max-width: 500px; }
+
+.skill_tag {
+  display: inline-block;
+  padding: 5px 1em;
+  border: 1px solid #bbb;
+  color: #c41230;
+  margin-right: 0.5em;
+  margin-top: 1em; }
+
+.job_cards__apply {
+  display: flex; }
+
+.job_cards__apply__button {
+  margin: auto;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid #222;
+  cursor: pointer; }
+
+.button--load_more {
+  background: #d7d7d7;
+  border: none; }
+
+.job_cards:nth-child(odd) {
+  background: #222;
+  color: #f2f2f2; }
+  .job_cards:nth-child(odd) .job_cards__description__subheadline {
+    color: #f2f2f2; }
+  .job_cards:nth-child(odd) .skill_tag {
+    color: #c41230; }
+  .job_cards:nth-child(odd) .job_cards__apply__button {
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2; }
+
+.about {
+  padding: 4em 0 0; }
+
+.about__content {
+  max-width: 820px; }
+  .about__content p {
+    margin: 0 2em;
+    text-align: left;
+    padding-bottom: 2em; }
+
+.social {
+  display: flex;
+  padding: 5em 0; }
+  .social h5 {
+    text-align: center; }
+
+.social__content {
+  display: flex;
+  margin: auto;
+  flex-direction: column; }
+
+.social_wrap {
+  display: flex; }
+
+.social__icon {
+  margin-right: 1em;
+  padding: 1em;
+  background: blue;
+  display: flex;
+  width: 65px;
+  height: 65px; }
+
+i {
+  margin: auto;
+  font-size: 55px !important;
+  color: #fff; }
+
+.facebook {
+  background: #3c5a9a; }
+
+.twitter {
+  background: #20b9ff; }
+
+.contact {
+  padding: 6em 0;
+  display: flex;
+  background: #222; }
+
+.contact__content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  padding: 0 2em;
+  margin: auto;
+  justify-content: space-around;
+  max-width: 1230px;
+  color: white; }
+  .contact__content h1 {
+    text-transform: uppercase; }
+    .contact__content h1 span {
+      margin-right: 1em; }
+  .contact__content ul {
+    margin-top: 3em;
+    color: #666; }
+    .contact__content ul li {
+      margin: 1em 0; }
+
+.contact__content_info {
+  min-width: 224px;
+  margin-bottom: 2em; }
+
+.location__ico {
+  background: url("/img/pointer.png");
+  display: inline-block;
+  width: 18px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+footer {
+  padding: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  background: #1e1e1e;
+  color: #666; }
+  footer h5 {
+    font-weight: 300;
+    font-size: 14px;
+    margin: auto 0; }
+
+.footer__content {
+  display: flex;
+  max-width: 1350px;
+  flex: 1;
+  justify-content: space-around;
+  margin: 0 2em;
+  flex-wrap: wrap; }
+
+.footer__contact {
+  margin: auto 0;
+  display: flex;
+  flex: 1;
+  max-width: 300px; }
+  .footer__contact i, .footer__contact a {
+    margin: auto;
+    margin-right: 5px;
+    color: #666; }
+  .footer__contact i {
+    font-size: 30px !important; }
+
+.hamburger {
+  display: none;
+  margin: auto 0;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  background: url("/img/hamburger.png"); }
+
+.responsive_nav {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 90vh;
+  background: rgba(34, 34, 34, 0.98);
+  flex-direction: column;
+  margin-bottom: 15em;
+  transition: all .5 ease-in;
+  display: none; }
+  .responsive_nav ul {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+    margin: auto; }
+    .responsive_nav ul li {
+      text-align: center;
+      margin: 4em 0; }
+  .responsive_nav a {
+    font-size: 24px;
+    color: #ccc !important; }
+
+.nav_social {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  display: none; }
+  .nav_social .small_headline {
+    font-size: 16px;
+    color: #ccc; }
+  .nav_social i {
+    font-size: 25px !important;
+    margin-right: 5px;
+    color: #9b9b9b; }
+
+@media screen and (max-width: 900px) {
+  header {
+    background-position: center; }
+    header h1 {
+      font-size: 61px !important; }
+  .services, .job_cards {
+    flex-direction: column; }
+  .contact {
+    height: auto;
+    flex-wrap: no-wrap; } }
+
+@media screen and (max-width: 540px) {
+  .contact {
+    height: auto;
+    flex-wrap: no-wrap; } }
+
+@media screen and (max-width: 400px) {
+  .header__content {
+    top: -2em; }
+  .header__content__text {
+    height: 35px;
+    overflow: hidden; }
+  .services, .job_cards {
+    flex-direction: column; }
+  .job_cards:nth-child(even) {
+    background: #f8f7f5; }
+  .job_cards:nth-child(odd) {
+    background: #fff;
+    color: black !important; }
+    .job_cards:nth-child(odd) .job_cards__description__subheadline {
+      color: black !important; }
+    .job_cards:nth-child(odd) .skill_tag {
+      color: #c41230; }
+  .job_cards__apply {
+    margin-top: 2em; } }

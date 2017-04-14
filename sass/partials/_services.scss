@@ -1,0 +1,50 @@
+.services{
+	display:flex;
+	flex-wrap:wrap;
+}
+.service{
+	background:#fbfbfb;
+	display:flex;
+	padding:5em 0;
+	flex:1;
+}
+.service__content{
+	margin:auto;
+	padding:1em;
+	text-align:center;
+}
+.service__header{
+	text-transform:uppercase;
+	letter-spacing:5px;
+}
+.service__text{
+	font-weight:300;
+	color:#666;
+	max-width:377px;
+}
+.text__divider--gray{
+	margin:3em auto;
+	background:#d0d0d0;
+}
+.logo_development{
+	width: 103px;
+	background:url('/img/development_logo.png');		
+}
+.web_logo{
+	background:url('/img/web.png');		
+	width: 88px;
+}
+.team_logo{
+	width: 88px;
+	background:url('/img/team.png');
+}
+.service:nth-child(2){
+	background:#ededed;
+}
+.service__logo{
+	height: 88px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin:0 auto;
+	margin-bottom:3em;
+}
